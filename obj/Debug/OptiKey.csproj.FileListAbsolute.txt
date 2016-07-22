@@ -1,0 +1,8 @@
+H:\GitHub_Repos\OpenSourceWindowsGazeControl\OptiKey\obj\Debug\MainWindow.baml
+H:\GitHub_Repos\OpenSourceWindowsGazeControl\OptiKey\obj\Debug\App.baml
+H:\GitHub_Repos\OpenSourceWindowsGazeControl\OptiKey\obj\Debug\MainWindow.g.cs
+H:\GitHub_Repos\OpenSourceWindowsGazeControl\OptiKey\obj\Debug\App.g.cs
+H:\GitHub_Repos\OpenSourceWindowsGazeControl\OptiKey\obj\Debug\OptiKey_MarkupCompile.cache
+H:\GitHub_Repos\OpenSourceWindowsGazeControl\OptiKey\obj\Debug\OptiKey.g.resources
+H:\GitHub_Repos\OpenSourceWindowsGazeControl\OptiKey\obj\Debug\OptiKey.Properties.Resources.resources
+H:\GitHub_Repos\OpenSourceWindowsGazeControl\OptiKey\obj\Debug\OptiKey.csproj.GenerateResource.Cache
