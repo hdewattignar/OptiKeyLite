@@ -211,10 +211,8 @@ namespace OptiKey
                 EventHandler sizeAndPositionInitialised = null;
                 sizeAndPositionInitialised = async (_, __) =>
                 {
-                    mainWindowManipulationService.SizeAndPositionInitialised -= sizeAndPositionInitialised; //Ensure this handler only triggers once
-                    await ShowSplashScreen(inputService, audioService, mainViewModel);
-                    inputService.RequestResume(); //Start the input service
-                    await CheckForUpdates(inputService, audioService, mainViewModel);
+                    mainWindowManipulationService.SizeAndPositionInitialised -= sizeAndPositionInitialised; //Ensure this handler only triggers once                    
+                    inputService.RequestResume(); //Start the input service                    
                 };
                 if (mainWindowManipulationService.SizeAndPositionIsInitialised)
                 {
@@ -222,7 +220,7 @@ namespace OptiKey
                 }
                 else
                 {
-                    mainWindowManipulationService.SizeAndPositionInitialised += sizeAndPositionInitialised;    
+                    mainWindowManipulationService.SizeAndPositionInitialised += sizeAndPositionInitialised;
                 }
             }
             catch (Exception ex)
@@ -485,145 +483,7 @@ namespace OptiKey
         }
         
         #endregion
-
-        #region Show Splash Screen
-
-        private static async Task<bool> ShowSplashScreen(IInputService inputService, IAudioService audioService, MainViewModel mainViewModel)
-        {
-            var taskCompletionSource = new TaskCompletionSource<bool>(); //Used to make this method awaitable on the InteractionRequest callback
-
-            if (Settings.Default.ShowSplashScreen)
-            {
-                Log.Info("Showing splash screen.");
-
-                var message = new StringBuilder();
-
-                message.AppendLine(string.Format(OptiKey.Properties.Resources.VERSION_DESCRIPTION, DiagnosticInfo.AssemblyVersion));
-                message.AppendLine(string.Format(OptiKey.Properties.Resources.KEYBOARD_AND_DICTIONARY_LANGUAGE_DESCRIPTION, Settings.Default.KeyboardAndDictionaryLanguage.ToDescription()));
-                message.AppendLine(string.Format(OptiKey.Properties.Resources.UI_LANGUAGE_DESCRIPTION, Settings.Default.UiLanguage.ToDescription()));
-                message.AppendLine(string.Format(OptiKey.Properties.Resources.POINTING_SOURCE_DESCRIPTION, Settings.Default.PointsSource.ToDescription()));
-
-                var keySelectionSb = new StringBuilder();
-                keySelectionSb.Append(Settings.Default.KeySelectionTriggerSource.ToDescription());
-                switch (Settings.Default.KeySelectionTriggerSource)
-                {
-                    case TriggerSources.Fixations:
-                        keySelectionSb.Append(string.Format(OptiKey.Properties.Resources.DURATION_FORMAT, Settings.Default.KeySelectionTriggerFixationDefaultCompleteTime.TotalMilliseconds));
-                        break;
-
-                    case TriggerSources.KeyboardKeyDownsUps:
-                        keySelectionSb.Append(string.Format(" ({0})", Settings.Default.KeySelectionTriggerKeyboardKeyDownUpKey));
-                        break;
-
-                    case TriggerSources.MouseButtonDownUps:
-                        keySelectionSb.Append(string.Format(" ({0})", Settings.Default.KeySelectionTriggerMouseDownUpButton));
-                        break;
-                }
-                message.AppendLine(string.Format(OptiKey.Properties.Resources.KEY_SELECTION_TRIGGER_DESCRIPTION, keySelectionSb));
-
-                var pointSelectionSb = new StringBuilder();
-                pointSelectionSb.Append(Settings.Default.PointSelectionTriggerSource.ToDescription());
-                switch (Settings.Default.PointSelectionTriggerSource)
-                {
-                    case TriggerSources.Fixations:
-                        pointSelectionSb.Append(string.Format(OptiKey.Properties.Resources.DURATION_FORMAT, Settings.Default.PointSelectionTriggerFixationCompleteTime.TotalMilliseconds));
-                        break;
-
-                    case TriggerSources.KeyboardKeyDownsUps:
-                        pointSelectionSb.Append(string.Format(" ({0})", Settings.Default.PointSelectionTriggerKeyboardKeyDownUpKey));
-                        break;
-
-                    case TriggerSources.MouseButtonDownUps:
-                        pointSelectionSb.Append(string.Format(" ({0})", Settings.Default.PointSelectionTriggerMouseDownUpButton));
-                        break;
-                }
-                message.AppendLine(string.Format(OptiKey.Properties.Resources.POINT_SELECTION_DESCRIPTION, pointSelectionSb));
-
-                message.AppendLine(OptiKey.Properties.Resources.MANAGEMENT_CONSOLE_DESCRIPTION);
-                message.AppendLine(OptiKey.Properties.Resources.WEBSITE_DESCRIPTION);
-
-                inputService.RequestSuspend();
-                audioService.PlaySound(Settings.Default.InfoSoundFile, Settings.Default.InfoSoundVolume);
-                mainViewModel.RaiseToastNotification(
-                    OptiKey.Properties.Resources.OPTIKEY_DESCRIPTION, 
-                    message.ToString(), 
-                    NotificationTypes.Normal,
-                    () =>
-                        {
-                            inputService.RequestResume();
-                            taskCompletionSource.SetResult(true);
-                        });
-            }
-            else
-            {
-                taskCompletionSource.SetResult(false);
-            }
-
-            return await taskCompletionSource.Task;
-        }
-
-        #endregion
-
-        #region  Check For Updates
-
-        private static async Task<bool> CheckForUpdates(IInputService inputService, IAudioService audioService, MainViewModel mainViewModel)
-        {
-            var taskCompletionSource = new TaskCompletionSource<bool>(); //Used to make this method awaitable on the InteractionRequest callback
-
-            if (Settings.Default.CheckForUpdates)
-            {
-                Log.InfoFormat("Checking GitHub for updates (repo owner:'{0}', repo name:'{1}').", 
-                    GitHubRepoOwner, GitHubRepoName);
-
-                new ObservableGitHubClient(new ProductHeaderValue("OptiKey")).Release
-                    .GetAll(GitHubRepoOwner, GitHubRepoName)
-                    .Where(release => !release.Prerelease)
-                    .Take(1)
-                    .ObserveOnDispatcher()
-                    .Subscribe(release =>
-                    {
-                        var currentVersion = new Version(DiagnosticInfo.AssemblyVersion); //Convert from string
-
-                        //Discard revision (4th number) as my GitHub releases are tagged with "vMAJOR.MINOR.PATCH"
-                        currentVersion = new Version(currentVersion.Major, currentVersion.Minor, currentVersion.Build);
-
-                        if (!string.IsNullOrEmpty(release.TagName))
-                        {
-                            var tagNameWithoutLetters =
-                                new string(release.TagName.ToCharArray().Where(c => !char.IsLetter(c)).ToArray());
-                            var latestAvailableVersion = new Version(tagNameWithoutLetters);
-                            if (latestAvailableVersion > currentVersion)
-                            {
-                                Log.InfoFormat("An update is available. Current version is {0}. Latest version on GitHub repo is {1}",
-                                    currentVersion, latestAvailableVersion);
-
-                                inputService.RequestSuspend();
-                                audioService.PlaySound(Settings.Default.InfoSoundFile, Settings.Default.InfoSoundVolume);
-                                mainViewModel.RaiseToastNotification(OptiKey.Properties.Resources.UPDATE_AVAILABLE,
-                                    string.Format(OptiKey.Properties.Resources.URL_DOWNLOAD_PROMPT, release.TagName),
-                                    NotificationTypes.Normal,
-                                    () => 
-                                        {
-                                            inputService.RequestResume();
-                                            taskCompletionSource.SetResult(true);
-                                        });
-
-                                return;
-                            }
-                        }
-
-                        Log.Info("No update found.");
-                    }, exception => Log.WarnFormat("Error when checking for updates. Exception message:{0}", exception.Message));
-            }
-            else
-            {
-                taskCompletionSource.SetResult(false);
-            }
-
-            return await taskCompletionSource.Task;
-        }
-
-        #endregion
+        
 
         #region Release Keys On App Exit
 

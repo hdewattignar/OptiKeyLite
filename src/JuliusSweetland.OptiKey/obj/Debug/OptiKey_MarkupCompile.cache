@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-H:\GitHub_Repos\OptiKey(updated)\src\JuliusSweetland.OptiKey\obj\Debug\
+H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\
 OptiKey
 none
 false
 DEBUG;TRACE
-H:\GitHub_Repos\OptiKey(updated)\src\JuliusSweetland.OptiKey\App.xaml
+H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\App.xaml
 54-1084543212
 49-1238599707
 244980006916
-93-161554307
+93-992510856
 Resources\Icons\KeySymbols.xaml;Resources\Themes\Android_Light.xaml;Resources\Themes\Android_Dark.xaml;Resources\Themes\Colours\Android.xaml;UI\Views\Keyboards\Common\Language.xaml;UI\Views\Keyboards\Common\Minimised.xaml;UI\Views\Keyboards\Common\Mouse.xaml;UI\Views\Keyboards\Common\SizeAndPosition.xaml;UI\Views\Keyboards\Common\Menu.xaml;UI\Views\Keyboards\Common\Diacritics3.xaml;UI\Views\Keyboards\Common\Diacritics2.xaml;UI\Views\Keyboards\Common\Diacritics1.xaml;UI\Views\Keyboards\Common\Currencies2.xaml;UI\Controls\Output.xaml;UI\Views\Keyboards\Dutch\BelgiumAlpha.xaml;UI\Views\Keyboards\Dutch\NetherlandsAlpha.xaml;UI\Views\Keyboards\Dutch\BelgiumConversationAlpha.xaml;UI\Views\Keyboards\Dutch\NetherlandsConversationAlpha.xaml;UI\Views\Keyboards\Dutch\Diacritics1.xaml;UI\Views\Keyboards\Dutch\Diacritics2.xaml;UI\Views\Keyboards\Dutch\Diacritics3.xaml;UI\Views\Keyboards\Russian\Alpha.xaml;UI\Views\Keyboards\Russian\ConversationAlpha.xaml;UI\Views\Keyboards\English\Alpha.xaml;UI\Views\Keyboards\Common\NumericAndSymbols1.xaml;UI\Views\Keyboards\Common\Currencies1.xaml;UI\Views\Keyboards\Common\PhysicalKeys.xaml;UI\Views\Keyboards\Common\NumericAndSymbols3.xaml;UI\Views\Keyboards\Common\YesNoQuestion.xaml;UI\Views\Keyboards\Common\NumericAndSymbols2.xaml;UI\Views\Keyboards\Common\ConversationNumericAndSymbols.xaml;UI\Views\Keyboards\English\ConversationAlpha.xaml;UI\Views\Keyboards\French\Alpha.xaml;UI\Views\Keyboards\French\ConversationAlpha.xaml;UI\Views\Keyboards\French\Diacritics1.xaml;UI\Views\Keyboards\French\Diacritics2.xaml;UI\Views\Keyboards\French\Diacritics3.xaml;UI\Views\Keyboards\German\Alpha.xaml;UI\Views\Keyboards\German\ConversationAlpha.xaml;UI\Views\Keyboards\German\Diacritics1.xaml;UI\Views\Keyboards\German\Diacritics2.xaml;UI\Views\Keyboards\German\Diacritics3.xaml;UI\Views\MainView.xaml;UI\Views\ManagementView.xaml;UI\Views\Management\OtherView.xaml;UI\Views\Management\DictionaryView.xaml;UI\Views\Management\PointingAndSelectingView.xaml;UI\Views\Management\SoundsView.xaml;UI\Views\Management\VisualsView.xaml;UI\Views\Management\WordsView.xaml;UI\Windows\CrashWindow.xaml;UI\Windows\ConfirmationWindow.xaml;UI\Windows\ManagementWindow.xaml;UI\Windows\MainWindow.xaml;
 
 False

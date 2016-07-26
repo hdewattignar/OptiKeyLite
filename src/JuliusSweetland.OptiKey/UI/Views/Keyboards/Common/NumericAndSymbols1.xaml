@@ -186,7 +186,7 @@
                       SharedSizeGroup="KeyWithSingleLetter"
                       Value="&quot;"/>
         <controls:Key Grid.Row="2" Grid.Column="19" Grid.ColumnSpan="2"
-                      SymbolGeometry="{StaticResource 1of3Icon}"
+                      SymbolGeometry="{StaticResource 2of2Icon}"
                       Text="{x:Static resx:Resources.NEXT}"
                       SharedSizeGroup="KeyWithSymbol"
                       Value="{x:Static models:KeyValues.NumericAndSymbols2KeyboardKey}"/>

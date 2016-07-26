@@ -1126,16 +1126,17 @@ namespace OptiKey.UI.ViewModels
                         break;
 
                     case FunctionKeys.Quit:
-                        Log.Info("Quit key selected.");
-                        var keyboardBeforeQuit = Keyboard;
-                        Keyboard = new YesNoQuestion(Resources.QUIT_MESSAGE,
-                            () =>
-                            {
-                                Keyboard = new YesNoQuestion(Resources.QUIT_CONFIRMATION_MESSAGE,
-                                    () => Application.Current.Shutdown(),
-                                    () => { Keyboard = keyboardBeforeQuit; });
-                            },
-                            () => { Keyboard = keyboardBeforeQuit; });
+                        //Log.Info("Quit key selected.");
+                        //var keyboardBeforeQuit = Keyboard;
+                        //Keyboard = new YesNoQuestion(Resources.QUIT_MESSAGE,
+                        //    () =>
+                        //    {
+                        //        Keyboard = new YesNoQuestion(Resources.QUIT_CONFIRMATION_MESSAGE,
+                        //            () => Application.Current.Shutdown(),
+                        //            () => { Keyboard = keyboardBeforeQuit; });
+                        //    },
+                        //    () => { Keyboard = keyboardBeforeQuit; });
+                        Application.Current.Shutdown();
                         break;
 
                     case FunctionKeys.RepeatLastMouseAction:

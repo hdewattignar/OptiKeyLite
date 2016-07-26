@@ -102,7 +102,7 @@
                       SharedSizeGroup="KeyWithSingleLetter"
                       Value="ơ" />
         <controls:Key Grid.Row="2" Grid.Column="22" Grid.ColumnSpan="2"
-                      SymbolGeometry="{StaticResource 1of3Icon}"
+                      SymbolGeometry="{StaticResource 1of2Icon}"
                       Text="{x:Static resx:Resources.NEXT}"
                       SharedSizeGroup="KeyWithSymbol"
                       Value="{x:Static models:KeyValues.Diacritic1KeyboardKey}" />

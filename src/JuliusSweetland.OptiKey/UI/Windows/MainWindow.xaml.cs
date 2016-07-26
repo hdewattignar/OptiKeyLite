@@ -96,12 +96,14 @@ namespace OptiKey.UI.Windows
 
         private void Quit()
         {
-            inputService.RequestSuspend();
-            if (MessageBox.Show(Properties.Resources.QUIT_MESSAGE, Properties.Resources.QUIT, MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-            {
-                Application.Current.Shutdown();
-            }
-            inputService.RequestResume();
+            //inputService.RequestSuspend();
+            //if (MessageBox.Show(Properties.Resources.QUIT_MESSAGE, Properties.Resources.QUIT, MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            //{
+            //    Application.Current.Shutdown();
+            //}
+            //inputService.RequestResume();
+
+            Application.Current.Shutdown();
         }
 
         private void OnContextMenuOpened(object sender, RoutedEventArgs e)
