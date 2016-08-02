@@ -63,12 +63,22 @@
                       Text="{x:Static resx:Resources.NUM_SYM_SPLIT_WITH_NEWLINE}"
                       SharedSizeGroup="KeyWithSymbol"
                       Value="{x:Static models:KeyValues.NumericAndSymbols1KeyboardKey}"/>
-        <!-- right-->
+        
+        <!-- right-->        
+        <controls:Key Grid.Row="2" Grid.RowSpan="4" Grid.Column="23" Grid.ColumnSpan="1"
+                      SymbolGeometry="{StaticResource RightArrowKeyIcon}"
+                      Text="{x:Static resx:Resources.PHYSICAL_KEYS_SPLIT_WITH_NEWLINE}"
+                      SharedSizeGroup="KeyWithSymbolAndText"
+                      Value="{x:Static models:KeyValues.PhysicalKeysKeyboardKey}"/>
+        
+        
+        
+        <!-- right
         <controls:Key Grid.Row="2" Grid.RowSpan="4" Grid.Column="23" Grid.ColumnSpan="1"
                       SymbolGeometry="{StaticResource RightArrowKeyIcon}"
                       Text="{x:Static resx:Resources.ALPHA}"
                       SharedSizeGroup="KeyWithSymbolAndText"
-                      Value="{x:Static models:KeyValues.AlphaKeyboardKey}"/>
+                      Value="{x:Static models:KeyValues.AlphaKeyboardKey}"/>-->
         <!--  row 1 -->
 
         <controls:Key Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"

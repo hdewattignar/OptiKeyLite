@@ -372,6 +372,9 @@
     <Compile Include="UI\ViewModels\Management\VisualsViewModel.cs" />
     <Compile Include="UI\ViewModels\Management\OtherViewModel.cs" />
     <Compile Include="UI\ViewModels\Management\WordsViewModel.cs" />
+    <Compile Include="UI\Views\Keyboards\Common\KeyboardTemplate.xaml.cs">
+      <DependentUpon>KeyboardTemplate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Views\Keyboards\Common\Language.xaml.cs">
       <DependentUpon>Language.xaml</DependentUpon>
     </Compile>
@@ -844,6 +847,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Resources\Themes\Colours\Android.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\Views\Keyboards\Common\KeyboardTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
