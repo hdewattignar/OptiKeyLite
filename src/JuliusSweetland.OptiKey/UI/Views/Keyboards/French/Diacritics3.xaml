@@ -172,6 +172,7 @@
                       SharedSizeGroup="KeyWithSingleLetter"
                       Value="ž"/>
         <controls:Key Grid.Row="4" Grid.Column="14" Grid.ColumnSpan="2" />
+        <controls:Key Grid.Row="4" Grid.Column="16" Grid.ColumnSpan="2" />
         <controls:Key Grid.Row="4" Grid.Column="18" Grid.ColumnSpan="2"
                       SymbolGeometry="{StaticResource BackOneIcon}"
                       Text="{x:Static resx:Resources.BACK_ONE_SPLIT_WITH_NEWLINE}"
