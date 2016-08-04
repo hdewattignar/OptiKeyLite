@@ -140,6 +140,7 @@ namespace OptiKey.Models
         public static readonly KeyValue ShrinkFromTopAndRightKey = new KeyValue(FunctionKeys.ShrinkFromTopAndRight);
         public static readonly KeyValue SizeAndPositionKeyboardKey = new KeyValue(FunctionKeys.SizeAndPositionKeyboard);
         public static readonly KeyValue SleepKey = new KeyValue(FunctionKeys.Sleep);
+        public static readonly KeyValue SpanishSpainKey = new KeyValue(FunctionKeys.SpanishSpain);
         public static readonly KeyValue SpeakKey = new KeyValue(FunctionKeys.Speak);
         public static readonly KeyValue Suggestion1Key = new KeyValue(FunctionKeys.Suggestion1);
         public static readonly KeyValue Suggestion2Key = new KeyValue(FunctionKeys.Suggestion2);

@@ -714,3 +714,5 @@ H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\nl\OptiKey.res
 H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\OptiKey.exe
 H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\OptiKey.pdb
 H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\OptiKey.csprojResolveAssemblyReference.cache
+H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\UI\Views\Keyboards\Spanish\Alpha.g.cs
+H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\UI\Views\Keyboards\Spanish\Alpha.baml

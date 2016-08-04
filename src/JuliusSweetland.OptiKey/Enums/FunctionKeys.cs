@@ -135,6 +135,7 @@
         SizeAndPositionKeyboard,
         Sleep,
         Speak,
+        SpanishSpain,
         Suggestion1,
         Suggestion2,
         Suggestion3,

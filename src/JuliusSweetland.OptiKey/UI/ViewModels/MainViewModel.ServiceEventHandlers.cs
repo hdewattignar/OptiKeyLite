@@ -1200,6 +1200,17 @@ namespace OptiKey.UI.ViewModels
                         Keyboard = new SizeAndPosition(() => Keyboard = currentKeyboard);
                         break;
 
+                    case FunctionKeys.SpanishSpain:                        
+                        Log.Info("Changing keyboard language to SpanishSpain.");
+                        InputService.RequestSuspend(); //Reloading the dictionary locks the UI thread, so suspend input service to prevent accidental selections until complete
+                        Settings.Default.KeyboardAndDictionaryLanguage = Languages.SpanishSpain;
+                        InputService.RequestResume();
+                        Log.Info("Changing keyboard to Menu.");
+                        Keyboard = new Menu(() => Keyboard = currentKeyboard);
+                        break;
+
+
+
                     case FunctionKeys.Speak:
                         var speechStarted = audioService.SpeakNewOrInterruptCurrentSpeech(
                             keyboardOutputService.Text,

@@ -3842,6 +3842,14 @@ namespace OptiKey.Properties {
                 return ResourceManager.GetString("SPEECH", resourceCulture);
             }
         }
+
+        public static string SPANISH_SPAIN
+        {
+            get
+            {
+                return ResourceManager.GetString("SPANISH_SPAIN", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to Startup keyboard:.

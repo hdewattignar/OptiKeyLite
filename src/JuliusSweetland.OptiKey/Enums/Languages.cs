@@ -12,7 +12,8 @@ namespace OptiKey.Enums
         EnglishUS,
 	    FrenchFrance,
         GermanGermany,
-        RussianRussia
+        RussianRussia,
+        SpanishSpain
     }
 
     public static partial class EnumExtensions
@@ -29,6 +30,7 @@ namespace OptiKey.Enums
                 case Languages.FrenchFrance: return Resources.FRENCH_FRANCE;
                 case Languages.GermanGermany: return Resources.GERMAN_GERMANY;
                 case Languages.RussianRussia: return Resources.RUSSIAN_RUSSIA;
+                case Languages.SpanishSpain: return Resources.SPANISH_SPAIN;
             }
 
             return languages.ToString();
