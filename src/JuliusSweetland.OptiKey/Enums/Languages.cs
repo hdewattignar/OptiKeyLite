@@ -48,6 +48,7 @@ namespace OptiKey.Enums
                 case Languages.FrenchFrance: return CultureInfo.GetCultureInfo("fr-FR");
                 case Languages.GermanGermany: return CultureInfo.GetCultureInfo("de-DE");
                 case Languages.RussianRussia: return CultureInfo.GetCultureInfo("ru-RU");
+                case Languages.SpanishSpain: return CultureInfo.GetCultureInfo("es-ES");
             }
 
             return CultureInfo.GetCultureInfo("en-GB");

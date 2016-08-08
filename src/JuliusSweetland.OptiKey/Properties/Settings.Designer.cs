@@ -1428,6 +1428,8 @@ namespace OptiKey.Properties {
             "\n      </keyValue>\r\n    </key>\r\n    <value>\r\n      <ticks>PT1.75S</ticks>\r\n    <" +
             "/value>\r\n  </item>\r\n  <item>\r\n    <key>\r\n      <keyValue>\r\n        <functionKey>" +
             "EnglishUK</functionKey>\r\n      </keyValue>\r\n    </key>\r\n    <value>\r\n      <tick" +
+            "s>PT1.75S</ticks>\r\n    </value>\r\n  </item>\r\n <item>\r\n    <key>\r\n      <keyValue>\r" +
+            "\n <functionKey>SpanishSpain</functionKey>\r\n      </keyValue>\r\n    </key>\r\n    <value>\r\n <tick" +
             "s>PT1.75S</ticks>\r\n    </value>\r\n  </item>\r\n  <item>\r\n    <key>\r\n      <keyValue" +
             ">\r\n        <functionKey>EnglishUS</functionKey>\r\n      </keyValue>\r\n    </key>\r\n" +
             "    <value>\r\n      <ticks>PT1.75S</ticks>\r\n    </value>\r\n  </item>\r\n  <item>\r\n  " +

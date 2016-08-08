@@ -51,7 +51,7 @@
                             <controls:Key Grid.Row="0" Grid.Column="2"
                                           Text="{x:Static resx:Resources.ENGLISH_CANADA}"
                                           SharedSizeGroup="KeyWithText"
-                                          Value="{x:Static models:KeyValues.EnglishCanadaKey}"/>
+                                          Value="{x:Static models:KeyValues.SpanishSpainKey}"/>
                             
                             <controls:Key Grid.Row="1" Grid.Column="0"
                                           Text="{x:Static resx:Resources.ENGLISH_UK}"

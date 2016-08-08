@@ -166,6 +166,7 @@ namespace OptiKey.Models
                 { Languages.EnglishCanada, defaultList },
                 { Languages.EnglishUK, defaultList },
                 { Languages.EnglishUS, defaultList },
+                { Languages.SpanishSpain, defaultList },
                 { Languages.FrenchFrance, defaultList }, //Could be customised to include àçéèù
                 { Languages.GermanGermany, defaultList }, //Could be customised to include äöüß
 				{ Languages.RussianRussia, "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
