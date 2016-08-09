@@ -1240,6 +1240,10 @@ Française (France)</value>
     <value>German (Germany)
 Deutsch (Deutschland)</value>
   </data>
+  <data name="SPANISH_SPAIN_SPLIT_WITH_NEWLINE" xml:space="preserve">
+    <value>Spanish (Spain)
+Español (España)</value>
+  </data>
   <data name="MAGNIFY_SUPPRESSED_FOR_SCROLLING_ACTIONS_LABEL" xml:space="preserve">
     <value>Suppress mouse magnification for scrolling actions:</value>
   </data>

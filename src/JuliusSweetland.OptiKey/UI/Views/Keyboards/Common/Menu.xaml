@@ -75,7 +75,7 @@
                       SymbolGeometry="{StaticResource BackIcon}"
                       Text="{x:Static resx:Resources.BACK}"
                       SharedSizeGroup="KeyWithSymbolAndText"
-                      Value="{x:Static models:KeyValues.BackFromKeyboardKey}"/>
+                      Value="{x:Static models:KeyValues.AlphaKeyboardKey}"/>
         <controls:Key Grid.Row="0" Grid.Column="6"
                       SymbolGeometry="{StaticResource QuitIcon}"
                       Text="{x:Static resx:Resources.QUIT}"

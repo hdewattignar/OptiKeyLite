@@ -3824,6 +3824,28 @@ namespace OptiKey.Properties {
                 return ResourceManager.GetString("SPACE", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Spanish (Spain)
+        ///Español (España).
+        /// </summary>
+        public static string SPANISH_SPAIN
+        {
+            get
+            {
+                return ResourceManager.GetString("SPANISH_SPAIN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spanish (Spain)
+        ///Español (España).
+        /// </summary>
+        public static string SPANISH_SPAIN_SPLIT_WITH_NEWLINE {
+            get {
+                return ResourceManager.GetString("SPANISH_SPAIN_SPLIT_WITH_NEWLINE", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to SPEAK.
@@ -3840,14 +3862,6 @@ namespace OptiKey.Properties {
         public static string SPEECH {
             get {
                 return ResourceManager.GetString("SPEECH", resourceCulture);
-            }
-        }
-
-        public static string SPANISH_SPAIN
-        {
-            get
-            {
-                return ResourceManager.GetString("SPANISH_SPAIN", resourceCulture);
             }
         }
         
