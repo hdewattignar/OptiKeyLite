@@ -195,7 +195,7 @@ namespace OptiKey.Services
                         (direction == ExpandToDirections.Bottom ||
                          direction == ExpandToDirections.BottomLeft ||
                          direction == ExpandToDirections.BottomRight))
-                    {
+                    {                        
                         if (dockSize == DockSizes.Full)
                         {
                             saveFullDockThicknessAsPercentageOfScreen(((window.ActualHeight + yAdjustmentToBottom) / screenBoundsInDp.Height) * 100);
@@ -347,11 +347,17 @@ namespace OptiKey.Services
                 adjustment = Move(direction, amountInPx.Value, distanceToTopBoundaryIfFloating,
                     distanceToBottomBoundaryIfFloating, distanceToLeftBoundaryIfFloating, distanceToRightBoundaryIfFloating,
                     windowState, floatingSizeAndPosition);
+                Move(MoveToDirections.Left, amountInPx.Value, distanceToTopBoundaryIfFloating,
+                    distanceToBottomBoundaryIfFloating, distanceToLeftBoundaryIfFloating, distanceToRightBoundaryIfFloating,
+                    windowState, floatingSizeAndPosition);                
             }
             else
             {
                 adjustment = MoveToEdge(direction, windowState, distanceToTopBoundaryIfFloating, 
                     distanceToBottomBoundaryIfFloating, distanceToLeftBoundaryIfFloating, distanceToRightBoundaryIfFloating);
+                MoveToEdge(MoveToDirections.Left, windowState, distanceToTopBoundaryIfFloating,
+                    distanceToBottomBoundaryIfFloating, distanceToLeftBoundaryIfFloating, distanceToRightBoundaryIfFloating);
+                
             }
 
             if (adjustment)
@@ -1027,7 +1033,7 @@ namespace OptiKey.Services
                     var dockPosition = getDockPosition();
                     if (direction == MoveToDirections.Top && dockPosition != DockEdges.Top)
                     {
-                        saveDockPosition(DockEdges.Top);
+                        saveDockPosition(DockEdges.Top);                        
                         adjustment = true;
                     }
                     else if (direction == MoveToDirections.Bottom && dockPosition != DockEdges.Bottom)
