@@ -28,6 +28,7 @@ using Octokit;
 using Octokit.Reactive;
 using Application = System.Windows.Application;
 using FileMode = System.IO.FileMode;
+using System.Drawing;
 
 namespace OptiKey
 {
@@ -153,10 +154,21 @@ namespace OptiKey
                 errorNotifyingServices.Add(inputService);
 
                 //Release keys on application exit
-                ReleaseKeysOnApplicationExit(keyStateService, publishService);
+                ReleaseKeysOnApplicationExit(keyStateService, publishService);                
 
                 //Compose UI
                 var mainWindow = new MainWindow(audioService, dictionaryService, inputService, keyStateService);
+
+                //get the size of the screen
+                Rectangle screenSize = mainWindow.GetScreen().Bounds;
+                double windowWidth = screenSize.Width;
+                double windowHeight = screenSize.Height * 0.35;
+
+                //for testing just hard code the size of the mainWindow    
+
+                Rect windowDimensions = new Rect(0.00, 0.00, windowWidth, windowHeight);
+                //Settings.Default.MainWindowFloatingSizeAndPosition.
+                Settings.Default.MainWindowFloatingSizeAndPosition = windowDimensions;
                 
                 IWindowManipulationService mainWindowManipulationService = new WindowManipulationService(
                     mainWindow,
@@ -164,6 +176,7 @@ namespace OptiKey
                     () => Settings.Default.MainWindowState,
                     () => Settings.Default.MainWindowPreviousState,
                     () => Settings.Default.MainWindowFloatingSizeAndPosition,
+                    //windowDimensions,
                     () => Settings.Default.MainWindowDockPosition,
                     () => Settings.Default.MainWindowDockSize,
                     () => Settings.Default.MainWindowFullDockThicknessAsPercentageOfScreen,
@@ -203,6 +216,14 @@ namespace OptiKey
                     };
                     mainWindow.MainView.Loaded += loadedHandler;
                 }
+
+                //mainWindow.Height = 1000;
+               // mainWindow.Width = 1000;
+
+                //Rect windowDimensions = new Rect(0, 0, windowSizeX, windowSizeY);
+                //Settings.Default.MainWindowFloatingSizeAndPosition.
+                //Settings.Default.MainWindowFloatingSizeAndPosition = windowDimensions;
+                //mainWindow.
 
                 //Show the main window
                 mainWindow.Show();

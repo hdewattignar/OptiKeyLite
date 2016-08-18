@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Windows;
 namespace OptiKey.Properties {
     
     
@@ -264,6 +265,9 @@ namespace OptiKey.Properties {
         public global::System.Windows.Rect MainWindowFloatingSizeAndPosition {
             get {
                 return ((global::System.Windows.Rect)(this["MainWindowFloatingSizeAndPosition"]));
+
+                //Rect windowDimensions = new Rect(00.00, 00.00, 800.00, 600.00);
+                //return windowDimensions;
             }
             set {
                 this["MainWindowFloatingSizeAndPosition"] = value;
