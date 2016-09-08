@@ -579,7 +579,7 @@ namespace OptiKey.Properties {
         [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
         public int MoveAndResizeAdjustmentAmountInPixels {
             get {
-                return ((int)(this["MoveAndResizeAdjustmentAmountInPixels"]));
+                return ((int)(this["MoveAndResizeAdjustmentAmountInPixels"]));//<<<<<<<<<<<<<sizing
             }
             set {
                 this["MoveAndResizeAdjustmentAmountInPixels"] = value;
@@ -1035,6 +1035,7 @@ namespace OptiKey.Properties {
         public global::OptiKey.Enums.DockEdges MainWindowDockPosition {
             get {
                 return ((global::OptiKey.Enums.DockEdges)(this["MainWindowDockPosition"]));
+                //return OptiKey.Enums.DockEdges.Bottom;
             }
             set {
                 this["MainWindowDockPosition"] = value;

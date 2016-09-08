@@ -716,3 +716,7 @@ H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\OptiKey.pdb
 H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\OptiKey.csprojResolveAssemblyReference.cache
 H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\UI\Views\Keyboards\Spanish\Alpha.g.cs
 H:\GitHub_Repos\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\UI\Views\Keyboards\Spanish\Alpha.baml
+E:\Git\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\UI\Views\Keyboards\Common\KeyboardTemplate.g.cs
+E:\Git\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\UI\Views\Keyboards\Spanish\Alpha.g.cs
+E:\Git\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\UI\Views\Keyboards\Common\KeyboardTemplate.baml
+E:\Git\OptiKeyLite\src\JuliusSweetland.OptiKey\obj\Debug\UI\Views\Keyboards\Spanish\Alpha.baml
