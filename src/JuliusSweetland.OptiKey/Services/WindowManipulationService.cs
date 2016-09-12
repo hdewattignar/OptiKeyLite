@@ -355,7 +355,7 @@ namespace OptiKey.Services
             {
                 adjustment = MoveToEdge(direction, windowState, distanceToTopBoundaryIfFloating, 
                     distanceToBottomBoundaryIfFloating, distanceToLeftBoundaryIfFloating, distanceToRightBoundaryIfFloating);
-                MoveToEdge(MoveToDirections.Left, windowState, distanceToTopBoundaryIfFloating,
+                MoveToEdge(direction, windowState, distanceToTopBoundaryIfFloating,
                     distanceToBottomBoundaryIfFloating, distanceToLeftBoundaryIfFloating, distanceToRightBoundaryIfFloating);
                 
             }
