@@ -8,6 +8,8 @@ using OptiKey.Models;
 using OptiKey.Properties;
 using OptiKey.UI.ViewModels.Keyboards;
 using OptiKey.UI.ViewModels.Keyboards.Base;
+using OptiKey.UI.Windows;
+using OptiKey.UI.TriggerActions;
 
 namespace OptiKey.UI.ViewModels
 {
@@ -431,11 +433,12 @@ namespace OptiKey.UI.ViewModels
                         Keyboard = new Menu(() => Keyboard = currentKeyboard);
                         break;
 
-                    //case FunctionKeys.ManagementWindow:
-                    //    Log.Info("Opening management window");
-                    //    mainWindowManipulationService.Restore();
-                    //    Keyboard = new ManagementViewModel(audioService, dictionaryService);
-                    //    break;
+                    case FunctionKeys.ManagementWindow:
+                        Log.Info("Opening management window");
+                        OpenManagementWindowAction manaegmentWindow = new OpenManagementWindowAction();
+                        //manaegmentWindow.
+                        
+                        break;
 
                     case FunctionKeys.Minimise:
                         Log.Info("Minimising window.");
