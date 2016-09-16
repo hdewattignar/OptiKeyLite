@@ -214,18 +214,10 @@ namespace OptiKey
                         mainWindow.MainView.Loaded -= loadedHandler; //Ensure this handler only triggers once
                     };
                     mainWindow.MainView.Loaded += loadedHandler;
-                }
-
-                //mainWindow.Height = 1000;
-               // mainWindow.Width = 1000;
-
-                //Rect windowDimensions = new Rect(0, 0, windowSizeX, windowSizeY);
-                //Settings.Default.MainWindowFloatingSizeAndPosition.
-                //Settings.Default.MainWindowFloatingSizeAndPosition = windowDimensions;
-                //mainWindow.
+                }               
 
                 //Show the main window
-                mainWindow.Show();
+                mainWindow.Show();               
 
                 //Display splash screen and check for updates (and display message) after the window has been sized and positioned for the 1st time
                 EventHandler sizeAndPositionInitialised = null;

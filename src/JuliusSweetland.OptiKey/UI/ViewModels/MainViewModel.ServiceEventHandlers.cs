@@ -10,6 +10,7 @@ using OptiKey.UI.ViewModels.Keyboards;
 using OptiKey.UI.ViewModels.Keyboards.Base;
 using OptiKey.UI.Windows;
 using OptiKey.UI.TriggerActions;
+using Prism.Interactivity.InteractionRequest;
 
 namespace OptiKey.UI.ViewModels
 {
@@ -435,9 +436,8 @@ namespace OptiKey.UI.ViewModels
 
                     case FunctionKeys.ManagementWindow:
                         Log.Info("Opening management window");
-                        OpenManagementWindowAction managementWindow = new OpenManagementWindowAction();
-                        //managementWindow.
                         
+
                         break;
 
                     case FunctionKeys.Minimise:
