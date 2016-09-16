@@ -435,8 +435,8 @@ namespace OptiKey.UI.ViewModels
 
                     case FunctionKeys.ManagementWindow:
                         Log.Info("Opening management window");
-                        OpenManagementWindowAction manaegmentWindow = new OpenManagementWindowAction();
-                        //manaegmentWindow.
+                        OpenManagementWindowAction managementWindow = new OpenManagementWindowAction();
+                        //managementWindow.
                         
                         break;
 
