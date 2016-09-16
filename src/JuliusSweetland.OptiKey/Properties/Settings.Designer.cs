@@ -264,10 +264,7 @@ namespace OptiKey.Properties {
         [global::System.Configuration.SettingsManageabilityAttribute(global::System.Configuration.SettingsManageability.Roaming)]
         public global::System.Windows.Rect MainWindowFloatingSizeAndPosition {
             get {
-                return ((global::System.Windows.Rect)(this["MainWindowFloatingSizeAndPosition"]));
-
-                //Rect windowDimensions = new Rect(00.00, 00.00, 800.00, 600.00);
-                //return windowDimensions;
+                return ((global::System.Windows.Rect)(this["MainWindowFloatingSizeAndPosition"]));                
             }
             set {
                 this["MainWindowFloatingSizeAndPosition"] = value;

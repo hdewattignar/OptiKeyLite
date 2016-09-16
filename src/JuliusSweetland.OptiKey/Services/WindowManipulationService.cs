@@ -347,15 +347,11 @@ namespace OptiKey.Services
                 adjustment = Move(direction, amountInPx.Value, distanceToTopBoundaryIfFloating,
                     distanceToBottomBoundaryIfFloating, distanceToLeftBoundaryIfFloating, distanceToRightBoundaryIfFloating,
                     windowState, floatingSizeAndPosition);
-                Move(MoveToDirections.Left, amountInPx.Value, distanceToTopBoundaryIfFloating,
-                    distanceToBottomBoundaryIfFloating, distanceToLeftBoundaryIfFloating, distanceToRightBoundaryIfFloating,
-                    windowState, floatingSizeAndPosition);                
+                              
             }
             else
             {
                 adjustment = MoveToEdge(direction, windowState, distanceToTopBoundaryIfFloating, 
-                    distanceToBottomBoundaryIfFloating, distanceToLeftBoundaryIfFloating, distanceToRightBoundaryIfFloating);
-                MoveToEdge(direction, windowState, distanceToTopBoundaryIfFloating,
                     distanceToBottomBoundaryIfFloating, distanceToLeftBoundaryIfFloating, distanceToRightBoundaryIfFloating);
                 
             }

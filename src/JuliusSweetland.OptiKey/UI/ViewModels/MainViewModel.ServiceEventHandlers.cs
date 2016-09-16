@@ -431,6 +431,12 @@ namespace OptiKey.UI.ViewModels
                         Keyboard = new Menu(() => Keyboard = currentKeyboard);
                         break;
 
+                    //case FunctionKeys.ManagementWindow:
+                    //    Log.Info("Opening management window");
+                    //    mainWindowManipulationService.Restore();
+                    //    Keyboard = new ManagementViewModel(audioService, dictionaryService);
+                    //    break;
+
                     case FunctionKeys.Minimise:
                         Log.Info("Minimising window.");
                         mainWindowManipulationService.Minimise();

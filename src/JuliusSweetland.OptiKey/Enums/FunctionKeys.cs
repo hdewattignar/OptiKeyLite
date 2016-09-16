@@ -62,6 +62,7 @@
         LeftCtrl,
         LeftShift,
         LeftWin,
+        ManagementWindow,
         Menu,
         MenuKeyboard,
         Minimise,

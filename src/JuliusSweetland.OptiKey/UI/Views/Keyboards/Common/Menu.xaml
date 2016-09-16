@@ -36,6 +36,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>  
         
         <!--  
@@ -72,11 +73,16 @@
                       SharedSizeGroup="KeyWithSymbolAndText"
                       Value="{x:Static models:KeyValues.MinimiseKey}"/>
         <controls:Key Grid.Row="0" Grid.Column="5"
+                      SymbolGeometry="{StaticResource MoreIcon}"
+                      Text="{x:Static resx:Resources.MENU}"
+                      SharedSizeGroup="KeyWithSymbolAndText"
+                      Value="{x:Static models:KeyValues.ManagementWindowKey}"/>
+        <controls:Key Grid.Row="0" Grid.Column="6"
                       SymbolGeometry="{StaticResource BackIcon}"
                       Text="{x:Static resx:Resources.BACK}"
                       SharedSizeGroup="KeyWithSymbolAndText"
                       Value="{x:Static models:KeyValues.AlphaKeyboardKey}"/>
-        <controls:Key Grid.Row="0" Grid.Column="6"
+        <controls:Key Grid.Row="0" Grid.Column="7"
                       SymbolGeometry="{StaticResource QuitIcon}"
                       Text="{x:Static resx:Resources.QUIT}"
                       SharedSizeGroup="KeyWithSymbolAndText"
