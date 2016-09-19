@@ -3554,6 +3554,17 @@ namespace OptiKey.Properties {
                 return ResourceManager.GetString("SELECTION_PROGRESS_INDICATOR_START_SIZE_LABEL", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Settings
+        /// </summary>
+        public static string SETTINGS
+        {
+            get
+            {
+                return ResourceManager.GetString("SETTINGS", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to SHIFT.

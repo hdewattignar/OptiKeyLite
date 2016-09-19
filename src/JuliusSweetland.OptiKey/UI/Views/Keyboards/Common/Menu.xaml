@@ -73,8 +73,8 @@
                       SharedSizeGroup="KeyWithSymbolAndText"
                       Value="{x:Static models:KeyValues.MinimiseKey}"/>
         <controls:Key Grid.Row="0" Grid.Column="5"
-                      SymbolGeometry="{StaticResource MoreIcon}"
-                      Text="{x:Static resx:Resources.MENU}"
+                      SymbolGeometry="{StaticResource SettingsIcon}"
+                      Text="SETTINGS"
                       SharedSizeGroup="KeyWithSymbolAndText"
                       Value="{x:Static models:KeyValues.ManagementWindowKey}"/>
         <controls:Key Grid.Row="0" Grid.Column="6"
