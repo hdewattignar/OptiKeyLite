@@ -157,18 +157,19 @@ namespace OptiKey
                 ReleaseKeysOnApplicationExit(keyStateService, publishService);                
 
                 //Compose UI
-                var mainWindow = new MainWindow(audioService, dictionaryService, inputService, keyStateService);
+                var mainWindow = new MainWindow(audioService, dictionaryService, inputService, keyStateService);               
+
+                //for testing just hard code the size and position of the mainWindow    
 
                 //get the size of the screen
-                Rectangle screenSize = mainWindow.GetScreen().Bounds;
-                double windowWidth = screenSize.Width;
-                double windowHeight = screenSize.Height * 0.35;
+                //Rectangle screenSize = mainWindow.GetScreen().Bounds;
+                //double windowWidth = screenSize.Width;
+                //double windowHeight = screenSize.Height * 0.35;
 
-                //for testing just hard code the size of the mainWindow    
-
-                Rect windowDimensions = new Rect(0.00, 0.00, windowWidth, windowHeight);
-                //Settings.Default.MainWindowFloatingSizeAndPosition.
-                Settings.Default.MainWindowFloatingSizeAndPosition = windowDimensions;
+                //Rect windowDimensions = new Rect(0.00, 0.00, windowWidth, windowHeight);               
+                //Settings.Default.MainWindowFloatingSizeAndPosition = windowDimensions;
+                Settings.Default.MainWindowDockPosition = DockEdges.Bottom;
+                Settings.Default.MainWindowState = WindowStates.Docked;                
                 
                 IWindowManipulationService mainWindowManipulationService = new WindowManipulationService(
                     mainWindow,
