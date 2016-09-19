@@ -2,6 +2,90 @@
 
 >OptiKeyLite is an assistive on-screen keyboard based on Optikey. OptikeyLite allows the user to control a keyboard using an eye tracking device. OptikeyLite is a modified version of Optikey .
 
+![Alt text](/ReadMeImages/Keyboard.PNG)
+
+##Using Optikey
+
+###Installing
+
+###Navigation
+
+>Using the left and right buttons on each side of the keyboard will take you to different sets of number, symbol and function keys.
+
+![Alt text](/ReadMeImages/KeyboardNavigationLeftRight.PNG)
+
+>Clicking the '1of2'/'2of2' buttons will show more.
+
+![Alt text](/ReadMeImages/NextKeys.PNG)
+
+###Predictive Text
+
+>Begin typing keys and OptiKey will begin to add word predictions above the input field. Once the desired word has been displayed simply click it to add it the the input field. Clicking the left and right arrows in the top corners will show more predictions.
+
+![Alt text](/ReadMeImages/WordPrediction.PNG)
+
+###Text to Speech
+
+>Click the "Text to Speech" button and Optikey will speak the word or sentence in the input box
+
+![Alt text](/ReadMeImages/TextToSpeech.PNG)
+
+###Clearing Text
+
+>Optikey allows you to clear one character at a time, one word at a time or clear all text.
+
+![Alt text](/ReadMeImages/Clearing.PNG)
+
+
+###Adding to the Dictionary
+
+>To add words to the dictionary simply type the desired word and click the plus sign icon at the top left of the keyboard. The word will be added to the dictionary and will pop up as a word prediction.
+
+![Alt text](/ReadMeImages/AddToDictionary.PNG)
+
+
+###Multikey Selection
+
+>Multi key selection allows you to more efficiently type words and sentences. To start multi key selection first toggle it on by clicking the bellow icon. Multi key selection can be set to ON for one word only, LOCKED ON for constant multi key selection, look for the pad lock icon in the top left when toggling multi key selection. Start the first letter of the word as you normally would, once the first letter has been entered just hover over each of the subsequent letters just long enough for the circle to begin filling. No need to worry about double letters, Optikey will figure that out for you. When you get to the last letter fully select it (i.e. allow the circle to completely fill) to signal that you are finished capturing the word. Optikey will give a best match for what was typed, you will be able to select alternative words from the predictions above the input field.
+
+![Alt text](/ReadMeImages/MultiKeySelection.PNG)
+
+
+##Menu Options
+
+>Clicking the bellow icon will take you to the menu where you can change opacity, language, size and position and more.
+
+![Alt text](/ReadMeImages/KeyboardMenu.PNG)
+
+
+###Changing Language
+
+>
+
+![Alt text](/ReadMeImages/KeyboardNavigationLeftRight.PNG)
+
+
+###Resizing
+
+>
+
+![Alt text](/ReadMeImages/KeyboardNavigationLeftRight.PNG)
+
+
+###Opacity
+
+>
+
+![Alt text](/ReadMeImages/KeyboardNavigationLeftRight.PNG)
+
+
+###Input settings
+
+>
+
+![Alt text](/ReadMeImages/KeyboardNavigationLeftRight.PNG)
+
+
 ##Modifying layouts
 
 >To modify an existing layout first find the layout under UI>Views. Layouts are written in xaml files.
