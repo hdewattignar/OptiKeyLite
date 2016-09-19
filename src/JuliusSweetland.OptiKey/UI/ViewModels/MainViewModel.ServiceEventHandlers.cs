@@ -436,7 +436,9 @@ namespace OptiKey.UI.ViewModels
 
                     case FunctionKeys.ManagementWindow:
                         Log.Info("Opening management window");
-                        
+                        var managementWindow = new ManagementWindow(audioService, dictionaryService);
+                        managementWindow.Topmost = true;
+                        managementWindow.Show();
 
                         break;
 
