@@ -71,15 +71,15 @@
 
 >Click the 'Size and Position' key to adjust the height of the keyboard and it vertical position.
 
-![Alt text](/ReadMeImages/MenuResizing.png)
+![Alt text](/ReadMeImages/MenuResizing.PNG)
 
 >Click the bellow icons to adjust the vertical dock position of the keyboard.
 
-![Alt text](/ReadMeImages/SizeAndPositionDockMenu.png)
+![Alt text](/ReadMeImages/SizeAndPositionDockMenu.PNG)
 
 >Click the bellow icons to adjust the height of the keyboard.
 
-![Alt text](/ReadMeImages/SizeAndPositionHeightMenu.png)
+![Alt text](/ReadMeImages/SizeAndPositionHeightMenu.PNG)
 
 
 ##Advanced settings
@@ -91,7 +91,7 @@
 -Input source and settings
 -Editing dictionary entries
 
-![Alt text](/ReadMeImages/MenuSettings.png)
+![Alt text](/ReadMeImages/MenuSettings.PNG)
 
 ##Modifying layouts
 
