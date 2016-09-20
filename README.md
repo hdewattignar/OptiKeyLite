@@ -36,14 +36,14 @@
 
 >Optikey allows you to clear one character at a time, one word at a time or clear all text.
 
-![Alt text](/ReadMeImages/Clearing.PNG)
+![Alt text](/ReadMeImages/Clearing.png)
 
 
 ###Adding to the Dictionary
 
 >To add words to the dictionary simply type the desired word and click the plus sign icon at the top left of the keyboard. The word will be added to the dictionary and will pop up as a word prediction.
 
-![Alt text](/ReadMeImages/AddToDictionary.PNG)
+![Alt text](/ReadMeImages/AddToDictionary.png)
 
 
 ###Multikey Selection
@@ -57,29 +57,29 @@
 
 >Clicking the 'Menu' icon will take you to the menu where you can change opacity, language, size and position and exit the application.
 
-![Alt text](/ReadMeImages/KeyboardMenu.PNG)
+![Alt text](/ReadMeImages/KeyboardMenu.png)
 
 
 ###Changing Language
 
 >Click the 'Language' menu item to choose from the available languages. Changing languages will provide you with a keyboard layout appropriate for the chosen language. Optikey will also give predictions for that language.
 
-![Alt text](/ReadMeImages/MenuLanguage.PNG)
+![Alt text](/ReadMeImages/MenuLanguage.png)
 
 
 ###Resizing
 
 >Click the 'Size and Position' key to adjust the height of the keyboard and it vertical position.
 
-![Alt text](/ReadMeImages/MenuResizing.PNG)
+![Alt text](/ReadMeImages/MenuResizing.png)
 
 >Click the bellow icons to adjust the vertical dock position of the keyboard.
 
-![Alt text](/ReadMeImages/SizeAndPositionDockMenu.PNG)
+![Alt text](/ReadMeImages/SizeAndPositionDockMenu.png)
 
 >Click the bellow icons to adjust the height of the keyboard.
 
-![Alt text](/ReadMeImages/SizeAndPositionHeightMenu.PNG)
+![Alt text](/ReadMeImages/SizeAndPositionHeightMenu.png)
 
 
 ##Advanced settings
@@ -91,7 +91,7 @@
 -Input source and settings
 -Editing dictionary entries
 
-![Alt text](/ReadMeImages/MenuSettings.PNG)
+![Alt text](/ReadMeImages/MenuSettings.png)
 
 ##Modifying layouts
 
