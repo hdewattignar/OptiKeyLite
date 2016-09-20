@@ -36,14 +36,14 @@
 
 >Optikey allows you to clear one character at a time, one word at a time or clear all text.
 
-![Alt text](/ReadMeImages/Clearing.png)
+![Alt text](/ReadMeImages/Clearing.PNG)
 
 
 ###Adding to the Dictionary
 
 >To add words to the dictionary simply type the desired word and click the plus sign icon at the top left of the keyboard. The word will be added to the dictionary and will pop up as a word prediction.
 
-![Alt text](/ReadMeImages/AddToDictionary.png)
+![Alt text](/ReadMeImages/AddToDictionary.PNG)
 
 
 ###Multikey Selection
@@ -57,14 +57,14 @@
 
 >Clicking the 'Menu' icon will take you to the menu where you can change opacity, language, size and position and exit the application.
 
-![Alt text](/ReadMeImages/KeyboardMenu.png)
+![Alt text](/ReadMeImages/KeyboardMenu.PNG)
 
 
 ###Changing Language
 
 >Click the 'Language' menu item to choose from the available languages. Changing languages will provide you with a keyboard layout appropriate for the chosen language. Optikey will also give predictions for that language.
 
-![Alt text](/ReadMeImages/MenuLanguage.png)
+![Alt text](/ReadMeImages/MenuLanguage.PNG)
 
 
 ###Resizing
