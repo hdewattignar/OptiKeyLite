@@ -14,7 +14,7 @@
 
 >Using the left and right buttons on each side of the keyboard will take you to different sets of number, symbol and function keys.
 
-![Alt text](/ReadMeImages/KeyboardNavigationLeftRight.PNG)
+![Alt text](/ReadMeImages/NavLeftRight.png)
 
 >Clicking the '1of2'/'2of2' buttons will show more.
 
