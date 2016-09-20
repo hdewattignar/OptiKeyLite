@@ -53,38 +53,43 @@
 
 ##Menu Options
 
->Clicking the bellow icon will take you to the menu where you can change opacity, language, size and position and more.
+>Clicking the 'Menu' icon will take you to the menu where you can change opacity, language, size and position and exit the application.
 
 ![Alt text](/ReadMeImages/KeyboardMenu.PNG)
 
 
 ###Changing Language
 
->
+>Click the 'Language' menu item to choose from the available languages. Changing languages will provide you with a keyboard layout appropriate for the chosen language. Optikey will also give predictions for that language.
 
-![Alt text](/ReadMeImages/KeyboardNavigationLeftRight.PNG)
+![Alt text](/ReadMeImages/MenuLanguage.PNG)
 
 
 ###Resizing
 
->
+>Click the 'Size and Position' key to adjust the height of the keyboard and it vertical position.
 
-![Alt text](/ReadMeImages/KeyboardNavigationLeftRight.PNG)
+![Alt text](/ReadMeImages/MenuResizing.PNG)
+
+>Click the bellow icons to adjust the vertical dock position of the keyboard.
+
+![Alt text](/ReadMeImages/SizeAndPositionDockMenu.PNG)
+
+>Click the bellow icons to adjust the height of the keyboard.
+
+![Alt text](/ReadMeImages/SizeAndPositionHeightMenu.PNG)
 
 
-###Opacity
+##Advanced settings
 
->
+>Click the 'Settings' button will open the advanced settings window. The advanced settings window contains options for:
+-Themes, fonts and notifications
+-Volume and sounds
+-Language and sentence options
+-Input source and settings
+-Editing dictionary entries
 
-![Alt text](/ReadMeImages/KeyboardNavigationLeftRight.PNG)
-
-
-###Input settings
-
->
-
-![Alt text](/ReadMeImages/KeyboardNavigationLeftRight.PNG)
-
+![Alt text](/ReadMeImages/MenuSettings.PNG)
 
 ##Modifying layouts
 
