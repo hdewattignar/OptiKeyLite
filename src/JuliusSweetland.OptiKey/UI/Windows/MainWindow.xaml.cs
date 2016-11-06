@@ -26,6 +26,7 @@ namespace OptiKey.UI.Windows
         private readonly InteractionRequest<NotificationWithServicesAndState> managementWindowRequest;
         private readonly ICommand managementWindowRequestCommand;
         private readonly ICommand quitCommand;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
 
         public MainWindow(
             IAudioService audioService,
@@ -34,6 +35,12 @@ namespace OptiKey.UI.Windows
             IKeyStateService keyStateService)
         {
             InitializeComponent();
+
+            notifyIcon = new System.Windows.Forms.NotifyIcon();
+            notifyIcon.Icon = new System.Drawing.Icon("../../Resources/Icons/Main.ico");
+            notifyIcon.MouseDoubleClick +=
+                new System.Windows.Forms.MouseEventHandler
+                    (mynotifyIcon_Close);
 
             this.audioService = audioService;
             this.dictionaryService = dictionaryService;
@@ -66,6 +73,11 @@ namespace OptiKey.UI.Windows
         public InteractionRequest<NotificationWithServicesAndState> ManagementWindowRequest { get { return managementWindowRequest; } }
         public ICommand ManagementWindowRequestCommand { get { return managementWindowRequestCommand; } }
         public ICommand QuitCommand { get { return quitCommand; } }
+
+        private void mynotifyIcon_Close(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            this.Close();
+        }
 
         private void RequestManagementWindow()
         {

@@ -60,7 +60,7 @@ namespace OptiKey {
             System.Uri resourceLocater = new System.Uri("/OptiKey;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\App.xaml"
-            System.Windows.Application.LoadComponent(this, resourceLocater);
+            System.Windows.Application.LoadComponent(this, resourceLocater);            
             
             #line default
             #line hidden
