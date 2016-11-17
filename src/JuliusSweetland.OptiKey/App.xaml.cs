@@ -29,6 +29,7 @@ using Octokit.Reactive;
 using Application = System.Windows.Application;
 using FileMode = System.IO.FileMode;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace OptiKey
 {
@@ -49,6 +50,7 @@ namespace OptiKey
 
         private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private readonly Action applyTheme;
+        private MainWindow mainWindow;
 
         #endregion
 
@@ -157,7 +159,7 @@ namespace OptiKey
                 ReleaseKeysOnApplicationExit(keyStateService, publishService);                
 
                 //Compose UI
-                var mainWindow = new MainWindow(audioService, dictionaryService, inputService, keyStateService);               
+                mainWindow = new MainWindow(audioService, dictionaryService, inputService, keyStateService);               
 
                 //for testing just hard code the size and position of the mainWindow    
 
@@ -243,6 +245,11 @@ namespace OptiKey
             }
         }
 
+        private void closeOptiKey(object sender, EventArgs e)
+        {
+            mainWindow.Close();
+        }
+
         #endregion
 
         #region Attach Unhandled Exception Handlers
@@ -311,19 +318,19 @@ namespace OptiKey
                 Log.Warn("User settings file is corrupt and needs to be corrected. Alerting user and shutting down.");
                 string filename = ((ConfigurationErrorsException)cee.InnerException).Filename;
 
-                if (MessageBox.Show(
-                        OptiKey.Properties.Resources.CORRUPTED_SETTINGS_MESSAGE,
-                        OptiKey.Properties.Resources.CORRUPTED_SETTINGS_TITLE,
-                        MessageBoxButton.YesNo,
-                        MessageBoxImage.Error) == MessageBoxResult.Yes)
-                {
-                    File.Delete(filename);
-                    try
-                    {
-                        System.Windows.Forms.Application.Restart();
-                    }
-                    catch {} //Swallow any exceptions (e.g. DispatcherExceptions) - we're shutting down so it doesn't matter.
-                }
+                //if (MessageBox.Show(
+                //        OptiKey.Properties.Resources.CORRUPTED_SETTINGS_MESSAGE,
+                //        OptiKey.Properties.Resources.CORRUPTED_SETTINGS_TITLE,
+                //        MessageBoxButton.YesNo,
+                //        MessageBoxImage.Error) == MessageBoxResult.Yes)
+                //{
+                //    File.Delete(filename);
+                //    try
+                //    {
+                //        System.Windows.Forms.Application.Restart();
+                //    }
+                //    catch {} //Swallow any exceptions (e.g. DispatcherExceptions) - we're shutting down so it doesn't matter.
+                //}
                 Current.Shutdown(); //Avoid the inevitable crash by shutting down gracefully
             }
         }
