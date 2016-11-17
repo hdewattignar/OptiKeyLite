@@ -10,7 +10,7 @@
 
 >To use OptiKeyLite first download the zip file
 
-![Alt text](/ReadMeImages/download.png)
+![Alt text](/ReadMeImages/download.PNG)
 
 >Unzip the file and navigate to OptiKeyLite/src/OptiKey/bin/Debug and find the OptiKey.exe file
 >To add a shortcut on your desktop right click on the file and click 'create shortcut'.
