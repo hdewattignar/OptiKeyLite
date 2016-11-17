@@ -16,6 +16,8 @@ namespace OptiKey.UI.ViewModels
 {
     public partial class MainViewModel
     {
+
+
         public void AttachServiceEventHandlers()
         {
             Log.Info("AttachServiceEventHandlers called.");
@@ -125,6 +127,8 @@ namespace OptiKey.UI.ViewModels
         
         private void KeySelectionResult(KeyValue? singleKeyValue, List<string> multiKeySelection)
         {
+           
+
             //Single key string
             if (singleKeyValue != null
                 && !string.IsNullOrEmpty(singleKeyValue.Value.String))
@@ -437,9 +441,8 @@ namespace OptiKey.UI.ViewModels
                     case FunctionKeys.ManagementWindow:
                         Log.Info("Opening management window");
                         var managementWindow = new ManagementWindow(audioService, dictionaryService);
-                        managementWindow.Topmost = true;
+                        managementWindow.Topmost = true;                        
                         managementWindow.Show();
-
                         break;
 
                     case FunctionKeys.Minimise:
